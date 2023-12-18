@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containar{
+    max-width: 1320px;
+}
+.vh100{
+    height: 100vh;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login */
+.card{
+    border-radius: 12px;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px -4px gray;
+}
+.title{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px auto 30px;
+}
+.card label{
+    display: block;
+    margin: 10px auto 15px;
+    text-align: center;
+    font-size: 24px;
+}
+.card input{
+    display: block;
+    margin: 10px auto 25px;
+    text-align: center;
+    font-size: 24px;
+    outline: none;
+    border: 1.6px solid black;
+    border-radius: 8px;
+    padding: 6px 15px;
+}
+.card button{
+    padding: 8px 15px;
+    margin: 25px auto;
+    border-radius: 10px;
+    border: 1.6px solid black;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+/* inear */
+#inear, #bal,#dep,#wit{
+    display: none;
+}
+#bal #balance{
+    text-align: center;
+    font-size: 35px;
+}

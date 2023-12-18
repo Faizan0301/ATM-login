@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="containar">
+      <div class="row vh100">
+         <div class="card">
+            <div id="login">
+               <h2 class="title">ATM</h2>
+               <form>
+                  <label for="username">Username</label>
+                  <input type="text" name="" id="user">
+                  <label for="username">Password</label>
+                  <input type="password" name="" id="pass">
+                  <button type="button" onclick="Enter()">Singin</button>
+               </form>
+            </div>
+            <div id="inear">
+               <h2 class="title">Hi Faizan</h2>
+               <button type="button" onclick="bal()">Balance Check</button>
+               <button type="button" onclick="Dep()">Deposite</button>
+               <button type="button" onclick="Wit()">Withdrawal</button>
+            </div>
+            <div id="bal">
+               <h2 class="title">Your balance..</h2>
+               <h3 id="balance"></h3>
+            </div>
+            <div id="dep">
+               <h2 class="title">Enter Your Amount</h2>
+               <input type="text" id="dep-amount">
+               <button type="button" onclick="deposite()">Deposite</button>
+            </div>
+            <div id="wit">
+               <h2 class="title">Enter Your Amount</h2>
+               <input type="text" id="wit-amount">
+               <button type="button" onclick="withdrawal()">Withdrawal</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
