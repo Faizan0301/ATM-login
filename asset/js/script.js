@@ -49,7 +49,7 @@ function Dep() {
 }
 function deposite() {
     var depAmount = document.getElementById('dep-amount').value
-    if (depAmount > 1 && depAmount < 10001) {
+    if (depAmount > 1) {
         balance+= parseInt(depAmount)
         document.getElementById('dep-bal').value = balance
         return
