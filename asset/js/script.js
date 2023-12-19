@@ -59,7 +59,7 @@ function deposite() {
 }
 function withdrawal() {
     var witAmount = document.getElementById('wit-amount').value
-    if (witAmount < balance) {
+    if (witAmount < balance &&witAmount>0) {
         balance-= parseInt(witAmount)
         document.getElementById('wit-bal').value = balance
     } else {
