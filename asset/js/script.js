@@ -8,9 +8,9 @@ function Enter() {
         document.getElementById('login').style.display = 'none'
         document.getElementById('inear').style.display = 'block'
         document.getElementById('close').style.display = 'block'
-    } else {
-         
-document.getElementById('earr').innerHTML='Username or Passward is wrong'        
+        document.getElementById('earr').innerHTML=''
+    } else {         
+        document.getElementById('earr').innerHTML='Username or Passward is wrong'        
     }
     
 }
@@ -19,21 +19,22 @@ function Close() {
         document.getElementById('inear').style.display = 'none'
         document.getElementById('login').style.display = 'block'
         document.getElementById('close').style.display = 'none'
+        document.getElementById('earr').innerHTML=''
     }
     else if (document.getElementById('bal').style.display == 'block') {
         document.getElementById('bal').style.display = 'none'
         document.getElementById('inear').style.display = 'block'
-
+        document.getElementById('earr').innerHTML=''
     }
     else if (document.getElementById('dep').style.display == 'block') {
         document.getElementById('dep').style.display = 'none'
         document.getElementById('inear').style.display = 'block'
-
+        document.getElementById('earr').innerHTML=''
     }
     else if (document.getElementById('wit').style.display == 'block') {
         document.getElementById('wit').style.display = 'none'
         document.getElementById('inear').style.display = 'block'
-
+        document.getElementById('earr').innerHTML=''
     }
 }
 function bal() {
@@ -52,6 +53,7 @@ function deposite() {
     if (depAmount > 1) {
         balance+= parseInt(depAmount)
         document.getElementById('dep-bal').value = balance
+        document.getElementById('earr').innerHTML=''
         return
     } else {
         document.getElementById('earr').innerHTML='please enter valide amount'
@@ -62,6 +64,7 @@ function withdrawal() {
     if (witAmount < balance &&witAmount>0) {
         balance-= parseInt(witAmount)
         document.getElementById('wit-bal').value = balance
+        document.getElementById('earr').innerHTML=''
     } else {
         document.getElementById('earr').innerHTML='you have only'+balance
     }
