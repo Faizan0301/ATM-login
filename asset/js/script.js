@@ -9,8 +9,8 @@ function Enter() {
         document.getElementById('inear').style.display = 'block'
         document.getElementById('close').style.display = 'block'
     } else {
-        alert('Please enter right username and password')
-        
+         
+document.getElementById('earr').innerHTML='Username or Passward is wrong'        
     }
     
 }
@@ -54,7 +54,7 @@ function deposite() {
         document.getElementById('dep-bal').value = balance
         return
     } else {
-        alert('please enter the valide amount')
+        document.getElementById('earr').innerHTML='please enter valide amount'
     }
 }
 function withdrawal() {
@@ -63,7 +63,7 @@ function withdrawal() {
         balance-= parseInt(witAmount)
         document.getElementById('wit-bal').value = balance
     } else {
-        alert('please enter the valide amount')
+        document.getElementById('earr').innerHTML='you have only'+balance
     }
 }
 function Wit() {
