@@ -15,7 +15,9 @@
     justify-content: center;
     align-items: center;
 }
-
+#earr{
+    color: red;
+}
 /* login */
 .card{
     border-radius: 12px;
